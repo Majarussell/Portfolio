@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maja Russell | Om mig</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="style.css">
+
+    <header>
+      <div class="container">
+        <nav class="large-screen">
+          <ul>
+            <li>
+                <a href="index.html">Forside</a>
+              </li>
+
+              <li>
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="no-margin">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+              </li>
+
+              <li>
+                <a class="aktiv" href="om-mig.html">Om mig</a>
+              </li>
+
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="small-screen-header">
+          <img class="small-screen-logo" src="img/logo.png" alt="mit logo">
+
+          <div id="hamburger" class="hamburger"><img src="img/hamburger.png" alt="menu"></div>
+        </div>
+
+        <nav id="small-screen" class="small-screen hidden">
+         <ul>
+           <li>
+            <a href="index.html">Forside</a>
+           </li>
+
+           <li>
+            <a href="portfolio.html">Portfolio</a>
+           </li>
+
+           <li>
+            <a href="om-mig.html">Om mig</a>
+           </li>
+
+           <li>
+            <a href="kontakt.html">Kontakt</a>
+           </li>
+
+         </ul>
+        </nav>
+      </div>
+    </header>
+
+<section class="logo-beskyttelse">
+    <div class="container sideopdeling">
+      <div>
+        <h1>Om mig</h1>
+        <p>Mit navn er Maja, jeg er 24 år gammel og lige nu i gang med at uddanne mig til Multimediedesigner på University College Lillebælt i Odense, hvor jeg lærer om designteorier, statistik indsamling og behandling, samt får træning i de forskellige programmer fra Adobe pakken, som Photoshop, Illustrator og Premiere Pro.</p>
+        <h2>Hvorfor Multimediedesigner uddannelsen?</h2>
+        <p>Jeg har altid haft en meget kreativ tilgang til tingene og nyder at bruge tid på at fordybe mig i de projekter jeg arbejder med. Jeg finder meget ro når jeg f.eks. går i gang med at tegne eller male, og efter jeg gik i gang med min uddannelse har jeg erfaret hvor meget jeg elsker det arbejde der også ligger bagved en opgave, som f.eks. målgruppe undersøgelser og design af prototyper. Der er en masse forarbejde der skal laves, hvis man gerne vil have et godt produkt, og der er meget viden at komme efter, hvis man altså ved hvad man laver.</p>
+        <h3>Nedestående kvalifisioner</h3>
+        <ul class="ikon-liste">
+          <li><img src="img/procreate.png" alt="Procreate"></li>
+          <li><img src="img/xd.png" alt="XD"></li>
+          <li><img src="img/illustrator.png" alt="Illustrator"></li>
+          <li><img src="img/indesign.png" alt="Indesign"></li>
+          <li><img src="img/photoshop.png" alt="Photoshop"></li>
+          <li><img src="img/premiere-pro.png" alt="Premiere Pro"></li>
+        </ul>
+      </div>
+
+      <img class="margintop-20"src="img/om-mig.png" alt="">
+    </div>
+</section>
+
+<script>
+      // Håndtere click events på hamburger menu knap
+      //
+      // Skrevet af Christian Pedersen
+      const hamburger = document.getElementById('hamburger')
+      const smallNav = document.getElementById('small-screen')
+
+
+      hamburger.addEventListener('click', () => {
+        smallNav.classList.toggle('hidden')
+      })
+    </script>
+  </body>
+</html>

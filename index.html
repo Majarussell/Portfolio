@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maja Russell | Forside</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<header>
+  <div class="container">
+    <nav class="large-screen">
+      <ul>
+        <li>
+            <a class="aktiv" href="index.html">Forside</a>
+          </li>
+
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li class="no-margin">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+          </li>
+
+          <li>
+            <a href="om-mig.html">Om mig</a>
+          </li>
+
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="small-screen-header">
+      <img class="small-screen-logo" src="img/logo.png" alt="mit logo">
+
+      <div id="hamburger" class="hamburger"><img src="img/hamburger.png" alt="menu"></div>
+    </div>
+
+    <nav id="small-screen" class="small-screen hidden">
+     <ul>
+       <li>
+        <a href="index.html">Forside</a>
+       </li>
+
+       <li>
+        <a href="portfolio.html">Portfolio</a>
+       </li>
+
+       <li>
+        <a href="om-mig.html">Om mig</a>
+       </li>
+
+       <li>
+        <a href="kontakt.html">Kontakt</a>
+       </li>
+
+     </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="vis-billede logo-beskyttelse">
+    <div class="container">
+      <div>
+        <h1>Maja Russell</h1>
+        <h2>Multimediedesign-uddannelsen</h2>
+
+        <p>Velkommen til en helt ny verden af design og kreativitet. Tager du et kig på siden, vil du kunne se de mange ting jeg kan tilbyde lige netop dig og din virksomhed. Du vil også få et indblik i hvem jeg er som person, da jeg føler at den personlige kontakt er utrolig vigtig i et hvilket som helst samarbejde, uanset dets størrelse. Hvis det er noget for dig, så tag et kig omkring og se de mange ting som jeg kan bidrage med.</p>
+      </div>
+    </div>
+</section>
+
+<script>
+      // Håndtere click events på hamburger menu knap
+      //
+      // Skrevet af Christian Pedersen
+      const hamburger = document.getElementById('hamburger')
+      const smallNav = document.getElementById('small-screen')
+
+
+      hamburger.addEventListener('click', () => {
+        smallNav.classList.toggle('hidden')
+      })
+    </script>
+  </body>
+</html>

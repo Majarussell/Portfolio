@@ -1,0 +1,328 @@
+    * {
+      /* Fjerner al styling fra alle properties  */
+      all: unset;
+
+      /* Går tiblage til browserens egne display typer */
+      display: revert;
+
+      /* Sikre at alle elementer er border boxes */
+      box-sizing: border-box;
+    }
+
+    header {
+      /* lille menu virker ikke uden */
+      position: relative;
+    }
+
+    a,
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      font-family: noto-sans, sans-serif;
+      font-size: 1rem;
+      color: #FFF9F5;
+    }
+
+    .hamburger {
+      margin-top: -120px;
+      padding-inline: 1rem;
+    }
+
+    .hamburger img {
+      width: 50px;
+      cursor: pointer;
+    }
+
+    nav.large-screen {
+      width: 100%;
+    }
+
+    .aktiv {
+      color: #262626;
+    }
+
+    nav.large-screen ul {
+      display: none;
+    }
+    .hidden {
+      display: none;
+    }
+
+    nav.small-screen li {
+      padding: 1rem 0.5rem;
+      font-weight: bold;
+      color: #FFF9F5;
+      text-align: center;
+    }
+
+    .small-screen-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* height: 100%; */
+    }
+
+    input,
+    textarea {
+      border-bottom: 2px solid black;
+      display: inline-block;
+      width: 100%;
+      padding: 0.5rem 0.5rem 0.5rem 0;
+      margin-block: 1rem;
+    }
+
+    footer a {
+      color: #E4CCBC;
+    }
+
+    footer a:hover {
+      color: #FFF9F5;
+    }
+
+    body {
+      background-color: #FCFBF5;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    section, footer {
+      padding-inline: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: finalsix, sans-serif;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      color: #D2918D;
+      /* Det gør min text medium */
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #262626;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: #262626;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: noto-sans, sans-serif;
+      font-size: 1rem;
+      color: #262626;
+      margin-bottom: 1.25rem;
+    }
+
+    button {
+      padding: 0.5rem;
+      border: #B97A50 solid 3px;
+      border-radius: 10px;
+      color: #B97A50;
+
+    }
+
+    button:hover {
+      color: #DBA17A;
+    }
+
+    .margintop-20 {
+      margin-top: 1.125rem;
+    }
+
+    .ikon-liste {
+      /* gør der ikke er "prikker" */
+      list-style-type: none;
+      display: grid;
+      /* en brøkdel af den samlede størrelse */
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .kontakt-info-box {
+      margin-top: 3rem;
+    }
+
+    .kontakt-info {
+      display: flex;
+      margin-bottom: 1.25rem;
+    }
+
+    .kontakt-info img {
+      margin-right: 1rem;
+    }
+
+    footer {
+      background-color: #D2918D;
+    }
+
+    footer h2 {
+      margin-bottom: 0.25rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-inline: auto;
+      height: 100%;
+    }
+
+    .eksempel-kasse {
+      margin-block: 2rem;
+    }
+
+    .eksempel-kasse:hover {
+      box-shadow: 10px 5px 5px #E4CCBC;
+      cursor: pointer;
+    }
+
+    .eksempel-billede {
+      background-position: center;
+      aspect-ratio: 16/9;
+      background-size: cover;
+    }
+
+    .katrine-billede {
+      background-image: url("img/katrine.png");
+    }
+
+    .selvportraet-billede {
+      background-image: url("img/selvportraet.png");
+    }
+
+    .logo-kat-billede {
+      background-image: url("img/logo-kat.png");
+    }
+
+    .plakat-billede {
+      background-image: url("img/plakat.png");
+    }
+
+    .simone-jpg {
+      background-image: url("img/simone.jpg");
+    }
+
+    .om-mig h2 {
+      margin-bottom: 0.25rem;
+    }
+
+    header {
+      background-color: #E4CCBC;
+      height: 120px;
+    }
+
+    nav.large-screen ul {
+      display: none;
+    }
+
+    nav.large-screen li:not(.no-margin) {
+      margin-top: -120px;
+    }
+
+    nav.small-screen {
+      padding: 120px;
+      margin-top: -120px;
+      background-color: #E4CCBC;
+      z-index: 999;
+    }
+
+    nav a {
+      font-size: 1.25rem;
+    }
+
+    nav img {
+      max-width: 240px;
+
+    }
+
+    .logo-beskyttelse {
+      padding-top: 120px;
+    }
+
+    .vis-billede {
+      height: calc(100vh - 120px);
+      background: url('img/forside-billede.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .small-screen-logo {
+      height: 240px;
+    }
+
+
+    @media only screen and (min-width: 768px) {
+      .eksempel-kasse-box {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 2rem;
+      }
+
+      .ikon-liste {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 500px;
+      }
+
+      .kontakt-info-box {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 2rem;
+      }
+
+      .kontakt-info-box h3 {
+        margin: 0;
+      }
+
+      nav.large-screen ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .hamburger,
+      .small-screen-logo,
+      nav.small-screen {
+        display: none;
+      }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+      .vis-billede div:not(.container) {
+        max-width: 45%;
+      }
+
+      .eksempel-kasse-box {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .sideopdeling {
+        display: grid;
+        gap: 10%;
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maja Russell | Portfolio</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="large-screen">
+          <ul>
+            <li>
+                <a href="index.html">Forside</a>
+              </li>
+
+              <li>
+                <a class="aktiv" href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="no-margin">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+              </li>
+
+              <li>
+                <a href="om-mig.html">Om mig</a>
+              </li>
+
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="small-screen-header">
+          <img class="small-screen-logo" src="img/logo.png" alt="mit logo">
+
+          <div id="hamburger" class="hamburger"><img src="img/hamburger.png" alt="menu"></div>
+        </div>
+
+        <nav id="small-screen" class="small-screen hidden">
+         <ul>
+           <li>
+            <a href="index.html">Forside</a>
+           </li>
+
+           <li>
+            <a href="portfolio.html">Portfolio</a>
+           </li>
+
+           <li>
+            <a href="om-mig.html">Om mig</a>
+           </li>
+
+           <li>
+            <a href="kontakt.html">Kontakt</a>
+           </li>
+
+         </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="logo-beskyttelse">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <h2>Her kan du se nærmere på mit arbejde </h2>
+
+        <p>Du behøver ikke kun at tage mit ord for gode vare, da du her på siden vil kunne se nogle af de ting, jeg har arbejdet med i løbet af mit første semester som Multimediedesigner på UCL, såvel som nogle af mine egne personlige fritids projekter.</p>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container eksempel-kasse-box">
+        <a href="img/katrine.png" target="_blank" class="eksempel-kasse">
+          <div class="eksempel-billede katrine-billede"></div>
+          <h3>Procreate - Tegning</h3>
+          <p>Jeg kan tilbyde at lave personlige tegninger til virksomheder og private. Ved hjælp af Procreate, tegner jeg over et billede som er taget på forhånd. </p>
+
+        </a>
+
+        <a href="video/kaffe.mp4" target="_blank" class="eksempel-kasse">
+          <video src="video/kaffe.mp4" autoplay muted controls loop></video>
+          <h3>Reklamevideo</h3>
+          <p>Jeg kan tilbyde at lave profesionelle reklamevideoer til din virksomhed. Jeg vil ved hjælp af Adobe Premiere Pro skabe en lækker video. </p>
+
+        </a>
+
+        <a href="img/selvportraet.png" target="_blank" class="eksempel-kasse">
+          <div class="eksempel-billede selvportraet-billede"></div>
+          <h3>Peentool - Portræt</h3>
+          <p>Jeg kan tilbyde at lave grafiske elementer til din virksomhed, sociale medier og reklamer. Jeg vil ved hjælp af Adobe Illustrator. </p>
+
+        </a>
+
+        <a href="img/logo-kat.png" target="_blank" class="eksempel-kasse">
+          <div class="eksempel-billede logo-kat-billede"></div>
+          <h3>Procreate - Logo</h3>
+          <p>Jeg kan tilbyde at lave profesionelle logo til din virksomhed. Ved hjælp af Procreate, tegner jeg i fri hånd det perfekte logo lige til ens smag. </p>
+
+        </a>
+
+        <a href="img/plakat.png" target="_blank" class="eksempel-kasse">
+          <div class="eksempel-billede plakat-billede"></div>
+          <h3>Plakat</h3>
+          <p>Jeg kan tilbyde at lave plakater til en reklamesløje for din virksomhed. Ved hjælp af Adobe Illustrator, kan jeg gøre præcis som i ønsker.</p>
+
+        </a>
+
+        <a href="img/simone.jpg" target="_blank" class="eksempel-kasse">
+          <div class="eksempel-billede simone-jpg"></div>
+          <h3>Portrætbillede</h3>
+          <p>Jeg kan tilbyde at tage profesionelle portrætbilleder af modeller. Ved hjælp af det rigtige udstyr og programmer som Adobe Photoshop og Lightroom</p>
+
+        </a>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <h2>Har jeg fanget din interesse?</h2>
+        <p>Så <a href="kontakt.html">klik her</a> om hør nærmer</p>
+      </div>
+  </footer>
+
+  <script>
+        // Håndtere click events på hamburger menu knap
+        //
+        // Skrevet af Christian Pedersen
+        const hamburger = document.getElementById('hamburger')
+        const smallNav = document.getElementById('small-screen')
+
+
+        hamburger.addEventListener('click', () => {
+          smallNav.classList.toggle('hidden')
+        })
+      </script>
+  </body>
+</html>

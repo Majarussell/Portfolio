@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maja Russell | Kontakt</title>
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tni6dmd.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <nav class="large-screen">
+          <ul>
+            <li>
+                <a href="index.html">Forside</a>
+              </li>
+
+              <li>
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="no-margin">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+              </li>
+
+              <li>
+                <a href="om-mig.html">Om mig</a>
+              </li>
+
+              <li>
+                <a class="aktiv" href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+        </nav>
+
+        <div class="small-screen-header">
+          <img class="small-screen-logo" src="img/logo.png" alt="mit logo">
+
+          <div id="hamburger" class="hamburger"><img src="img/hamburger.png" alt="menu"></div>
+        </div>
+
+        <nav id="small-screen" class="small-screen hidden">
+         <ul>
+           <li>
+            <a href="index.html">Forside</a>
+           </li>
+
+           <li>
+            <a href="portfolio.html">Portfolio</a>
+           </li>
+
+           <li>
+            <a href="om-mig.html">Om mig</a>
+           </li>
+
+           <li>
+            <a href="kontakt.html">Kontakt</a>
+           </li>
+
+         </ul>
+        </nav>
+      </div>
+    </header>
+
+  <section class="logo-beskyttelse">
+    <div class="container sideopdeling">
+      <div>
+        <h1>Kontakt mig</h1>
+        <h2>Og hør nærmer</h2>
+
+        <p>Hvis du simpelthen bare ikke kan få nok af mig, så hold dig endelig ikke tilbage og tag kontakt til mig allerede nu. Du kan vælge at udfylde kontaktformularen her på siden, ellers er du selvfølgelig også altid velkommen til at fange mig på min telefon eller mail. </p>
+        <p>Jeg glæder mig til at høre fra dig!</p>
+        <h3>Kontaktformular</h3>
+
+        <form id="ingen-submit" class="">
+          <input placeholder="Fulde navn">
+          <input placeholder="Mail" type="email">
+          <input placeholder="Telefon" type="tel">
+          <input placeholder="Emne">
+          <textarea rows="1" placeholder="Kommentar"></textarea>
+          <button type="submit" name="button">Send</button>
+        </form>
+
+        <div class="kontakt-info-box">
+          <div class="kontakt-info">
+            <img src="img/ikon-telefon.png" alt="ikon af en telefon">
+            <h3>+45 61 69 67 48</h3>
+          </div>
+
+          <div class="kontakt-info">
+            <img src="img/ikon-mail.png" alt="ikon af en mail">
+            <h3>Majarussellj@gmail.com</h3>
+          </div>
+        </div>
+      </div>
+
+      <img src="img/kontakt-mig.png" alt="">
+    </div>
+
+  </section>
+
+  <!-- Et stykke JavaScript, der forhindre kontakt formularen i at opdatere siden, da det ikke er meningen at den skal være funktionel.
+
+  Placeret nederst på siden, da "document.getElementById" kun kan finde en ID der allerede findes.
+
+  Skrevet af Christian Pedersen  -->
+  <script type="text/javascript">
+    /* Stopper formularen i at opdatere siden. */
+    document.getElementById('ingen-submit').addEventListener('submit', e => {
+      e.preventDefault();
+    });
+  </script>
+
+  <script>
+        // Håndtere click events på hamburger menu knap
+        //
+        // Skrevet af Christian Pedersen
+        const hamburger = document.getElementById('hamburger')
+        const smallNav = document.getElementById('small-screen')
+
+
+        hamburger.addEventListener('click', () => {
+          smallNav.classList.toggle('hidden')
+        })
+      </script>
+  </body>
+</html>
